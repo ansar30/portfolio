@@ -231,7 +231,7 @@ const Home = () => {
           </ShowMoreButton>
         )}
         <ButtonContainer>
-          <Button to="/contact">Get in Touch</Button>
+          <Button to="/contact">Get In Touch</Button>
           <ResumeButton
             href={process.env.PUBLIC_URL + '/assets/Ansar-resume-2025.pdf'}
             target="_blank"
