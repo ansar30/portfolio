@@ -94,48 +94,48 @@ const ProjectLink = styled.a`
 `;
 
 const Projects = () => {
-    const projects = [
-        {
-            title: "Zupain",
-            description: "A comprehensive e-commerce platform builder that enables users to create and manage their own online stores. Features include customizable templates, secure payment integration, inventory management, and analytics dashboard for tracking sales and customer behavior.",
-            techStack: ["React", "Node.js", "Next.js", "Ant Design", "Sequelize", "MySQL"],
-            link: "https://zupain.com"
-        },
-        {
-            title: "Fleeters",
-            description: "A comprehensive fleet management system that helps businesses track and optimize their vehicle operations. Features include real-time GPS tracking, automated maintenance scheduling, fuel efficiency monitoring, driver behavior analysis, route optimization, and detailed reporting dashboards. ",
-            techStack: ["Next.js", "Express", "PostgreSQL", "Material UI"],
-            link: "https://github.com/yourusername/project2"
-        },
-        {
-            title: "Duway",
-            description: "A social media platform integrated with AI capabilities for database management. Users can create posts, like content, add comments and interact with others. Features an admin application for tracking user activity, moderating content and maintaining the platform.",
-            techStack: ["React", "Node.js", "MongoDB", "Express", "Socket.io", "AWS", "Nest.js", "Tailwind CSS", "Storybook", "JavaScript", "HTML", "CSS"],
-            link: "https://github.com/yourusername/project3"
-        }
-    ];
+  const projects = [
+    {
+      title: "Zupain",
+      description: "A comprehensive e-commerce platform builder that enables users to create and manage their own online stores. Features include customizable templates, secure payment integration, inventory management, and analytics dashboard for tracking sales and customer behavior.",
+      techStack: ["React", "Node.js", "Next.js", "Ant Design", "Sequelize", "MySQL"],
+      link: "https://zupain.com"
+    },
+    {
+      title: "Fleeters",
+      description: "A comprehensive fleet management system that helps businesses track and optimize their vehicle operations. Features include real-time GPS tracking, automated maintenance scheduling, fuel efficiency monitoring, driver behavior analysis, route optimization, and detailed reporting dashboards. ",
+      techStack: ["Next.js", "Express", "PostgreSQL", "Material UI"],
+      link: "https://www.linkedin.com/company/kaay-labs"
+    },
+    {
+      title: "Duway",
+      description: "A social media platform integrated with AI capabilities for database management. Users can create posts, like content, add comments and interact with others. Features an admin application for tracking user activity, moderating content and maintaining the platform.",
+      techStack: ["React", "Node.js", "MongoDB", "Express", "Socket.io", "AWS", "Nest.js", "Tailwind CSS", "Storybook", "JavaScript", "HTML", "CSS"],
+      link: "https://www.linkedin.com/company/kaay-labs"
+    }
+  ];
 
-    return (
-        <ProjectSection>
-            <Title>Featured Projects</Title>
-            <ProjectGrid>
-                {projects.map((project, index) => (
-                    <ProjectCard key={index}>
-                        <ProjectTitle>{project.title}</ProjectTitle>
-                        <ProjectDescription>{project.description}</ProjectDescription>
-                        <TechStack>
-                            {project.techStack.map((tech, techIndex) => (
-                                <TechBadge key={techIndex}>{tech}</TechBadge>
-                            ))}
-                        </TechStack>
-                        <ProjectLink href={project.link} target="_blank" rel="noopener noreferrer">
-                            View Project
-                        </ProjectLink>
-                    </ProjectCard>
-                ))}
-            </ProjectGrid>
-        </ProjectSection>
-    );
+  return (
+    <ProjectSection>
+      <Title>Featured Projects</Title>
+      <ProjectGrid>
+        {projects.map((project, index) => (
+          <ProjectCard key={index}>
+            <ProjectTitle>{project.title}</ProjectTitle>
+            <ProjectDescription>{project.description}</ProjectDescription>
+            <TechStack>
+              {project.techStack.map((tech, techIndex) => (
+                <TechBadge key={techIndex}>{tech}</TechBadge>
+              ))}
+            </TechStack>
+            <ProjectLink href={project.link} target="_blank" rel="noopener noreferrer">
+              View Project
+            </ProjectLink>
+          </ProjectCard>
+        ))}
+      </ProjectGrid>
+    </ProjectSection>
+  );
 };
 
 export default Projects;
