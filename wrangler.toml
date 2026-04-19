@@ -1,5 +1,4 @@
 name = "ansar-portfolio"
 compatibility_date = "2024-04-05"
 
-[build]
-command = "npx @opennextjs/cloudflare build"
+pages_build_output_dir = ".next"
