@@ -1,0 +1,119 @@
+{
+  "site": {
+    "nav": {
+      "brandName": "Mohammed Ansar",
+      "brandTagline": "Senior Full Stack · GenAI",
+      "logoUrl": "",
+      "logoLetter": "MA",
+      "homeLabel": "Home",
+      "contactLabel": "Contact"
+    },
+    "footer": {
+      "headline": "Mohammed Ansar",
+      "headlineAccent": "GenAI Engineer",
+      "subline": "Built with Next.js & Tailwind. Thanks for visiting.",
+      "linkColumnTitle": "On this page",
+      "extraColumnTitle": "",
+      "extraLinks": [],
+      "copyrightNote": "",
+      "finePrint": "Designed for clarity on every screen size."
+    }
+  },
+  "hero": {
+    "title1": "Senior Full Stack",
+    "title2": "Developer &",
+    "gradientTitle": "GenAI Engineer",
+    "description": "3+ years of experience specializing in GenAI solutions and cloud-native applications. Expert in AWS Bedrock, RAG architectures, and LLM integrations with proven track record in delivering scalable enterprise solutions.",
+    "resumeUrl": "/assets/Updated-pdf-OCT-2025.pdf",
+    "linkedinUrl": "https://www.linkedin.com/in/mohammed-thameem-ansar/",
+    "phone": "+91 8056452530",
+    "email": "ansarthameem30@gmail.com",
+    "stats": [
+      { "value": "3+", "label": "Years" },
+      { "value": "50K+", "label": "Users" },
+      { "value": "10K+", "label": "Requests" }
+    ]
+  },
+  "sections": [
+    {
+      "id": "experience",
+      "title": "Experience",
+      "type": "timeline",
+      "items": [
+        {
+          "title": "GenAI Engineer",
+          "subtitle": "Kaay Labs, Chennai",
+          "date": "May 2023 - Present",
+          "bullets": [
+            "Architected production-grade GenAI solutions using AWS Bedrock",
+            "Developed RAG systems with 45% accuracy improvement",
+            "Built serverless AI pipelines processing 10K+ daily requests"
+          ]
+        },
+        {
+          "title": "System Engineer",
+          "subtitle": "Tata Consultancy Services, Chennai",
+          "date": "Mar 2021 - Dec 2022",
+          "bullets": [
+            "Developed enterprise applications for Fortune 500 clients using Java and Spring Boot",
+            "Collaborated with international clients from US and UK",
+            "Maintained 99.5% SLA adherence in production support",
+            "Optimized database queries improving performance by 50%"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skills",
+      "title": "Expertise",
+      "type": "grouped-grid",
+      "groups": [
+        {
+          "title": "Full Stack Development",
+          "categories": [
+            { "name": "Frontend", "skills": ["React.js", "Next.js", "TypeScript", "Tailwind CSS", "Vite", "Material UI"] },
+            { "name": "Backend", "skills": ["Node.js", "Express.js", "NestJS", "Python"] },
+            { "name": "Databases", "skills": ["MongoDB", "MySQL", "Sequelize", "Knex"] }
+          ]
+        },
+        {
+          "title": "GenAI & Cloud",
+          "categories": [
+            { "name": "AWS Services", "skills": ["Bedrock (Expert)", "Lambda", "S3", "IAM", "CloudWatch", "SageMaker"] },
+            { "name": "AI Technologies", "skills": ["RAG", "Vector DB", "Pinecone", "LLM Integration", "Prompt Engineering"] },
+            { "name": "DevOps & Tools", "skills": ["Git", "CI/CD", "Jira", "Agile", "TDD"] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "achievements",
+      "title": "Achievements",
+      "type": "grid",
+      "items": [
+        { "title": "API Performance", "metric": "99.9%", "description": "Uptime on all core microservices" },
+        { "title": "Code Optimization", "metric": "40%", "description": "Reduction in cloud computing costs" },
+        { "title": "CI/CD Enhancement", "metric": "60%", "description": "Faster deployment with automated workflows" },
+        { "title": "User Base Growth", "metric": "50K+", "description": "Monthly active users on MERN applications" }
+      ]
+    },
+    {
+      "id": "education",
+      "title": "Education",
+      "type": "grid",
+      "items": [
+        { "title": "Bachelor of Computer Science", "subtitle": "Sadakathullah Appa College", "date": "Sep 2019 - Oct 2020", "metric": "CGPA 8.6/10" }
+      ]
+    },
+    {
+      "id": "certifications",
+      "title": "Certifications & Learning",
+      "type": "list",
+      "items": [
+        "AWS Certified Solutions Architect (In Progress)",
+        "Advanced GenAI and LLM Applications",
+        "Full Stack Development Specialization"
+      ]
+    }
+  ]
+}

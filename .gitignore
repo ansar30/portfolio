@@ -23,3 +23,10 @@ build
 *.njsproj
 *.sln
 *.sw?
+
+# Admin uploads (keep folder with .gitkeep)
+public/uploads/portfolio/*
+!public/uploads/portfolio/.gitkeep
+
+.next/
+.env

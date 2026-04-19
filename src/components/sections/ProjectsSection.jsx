@@ -89,7 +89,7 @@ const ProjectsSection = () => {
     },
     {
       id: 5,
-      title: 'Blog CMS API',
+      title: 'Blog Admin API',
       description: 'A robust content management system API with authentication, content versioning, and media management.',
       category: 'API',
       image: '/api/placeholder/400/300',

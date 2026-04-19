@@ -84,6 +84,14 @@
     scroll-behavior: smooth;
   }
 
+  /* Comfortable mobile insets (notch / home indicator) */
+  @supports (padding: max(0px)) {
+    body {
+      padding-left: env(safe-area-inset-left);
+      padding-right: env(safe-area-inset-right);
+    }
+  }
+
   h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     letter-spacing: -0.02em;
@@ -97,13 +105,72 @@
 
 /* Selection */
 ::selection {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(99, 102, 241, 0.35);
   color: white;
 }
 
 /* Focus visible */
 *:focus-visible {
-  outline: 2px solid rgba(255, 255, 255, 0.5);
+  outline: 2px solid rgba(99, 102, 241, 0.6);
   outline-offset: 2px;
   border-radius: 4px;
 }
+
+/* ── Three.js Enhanced Utilities ──────────────────────────────── */
+
+/* Animated indigo→violet→cyan gradient text */
+@keyframes gradientShift {
+  0%   { background-position: 0%   50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0%   50%; }
+}
+
+.hero-gradient-text {
+  background: linear-gradient(
+    135deg,
+    #ffffff 0%,
+    #a5b4fc 25%,
+    #c4b5fd 50%,
+    #67e8f9 75%,
+    #ffffff 100%
+  );
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientShift 6s ease infinite;
+}
+
+/* Glowing indigo border pulse */
+@keyframes borderGlow {
+  0%, 100% { box-shadow: 0 0 0px rgba(99,102,241,0); }
+  50%       { box-shadow: 0 0 18px rgba(99,102,241,0.25), 0 0 40px rgba(139,92,246,0.12); }
+}
+
+.glow-card {
+  animation: borderGlow 4s ease-in-out infinite;
+}
+
+/* Subtle shimmer effect for cards */
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position:  200% center; }
+}
+
+.shimmer-border {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(99,102,241,0.3) 40%,
+    rgba(139,92,246,0.3) 60%,
+    transparent 100%
+  );
+  background-size: 200% auto;
+  animation: shimmer 3s linear infinite;
+}
+
+/* Navigation active indicator glow */
+.nav-active-glow {
+  box-shadow: 0 0 12px rgba(255,255,255,0.15);
+}
+
